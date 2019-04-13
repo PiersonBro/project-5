@@ -20,10 +20,10 @@ class Node {
         right = NULL;
     }
 
-    Node(T data) {
-        this->data = data;
-        left = NULL;
-        right = NULL;
+    Node(T data): data(data), left(NULL), right(NULL) {
+        // this->data = data;
+        // left = NULL;
+        // right = NULL;
     }
 
     Node(const Node& node) {
@@ -35,10 +35,10 @@ class Node {
     }
 
     ~Node() {
-        delete left;
-        delete right;
-        left = NULL;
-        right = NULL;
+        // delete left;
+        // delete right;
+        // left = NULL;
+        // right = NULL;
     }
 
     void setLeftNode(Node<T> * node) {
